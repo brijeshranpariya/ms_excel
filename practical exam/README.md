@@ -1,144 +1,84 @@
-# Final Practical Exam – Excel Project
+# Practical Exam – Excel Project
 
-## Introduction
+## Overview
 
-This practical exam project was completed using the provided `SampleSuperstore.csv` dataset.  
-The main goal of this project was to perform data cleaning, analysis, visualization, and dashboard creation in Excel based on the tasks mentioned in the exam sheet.
-
-The project was completed by following the given instructions only, without adding unnecessary extra features.
+This project demonstrates data cleaning, analysis, pivot table reporting, and dashboard creation using Microsoft Excel.
 
 ---
 
-# Files Included
+# Sheets Included
 
-- `Practical_Exam_Final_Fixed.xlsx` → Final Excel workbook
-- `SampleSuperstore.csv` → Dataset used in the project
-- `README.md` → Project explanation and documentation
+## Raw_Data
 
----
+Contains the original dataset used for the project.
 
-# Work Completed
+## Cleaned_Data
 
-## 1. Dataset Import
+Contains the cleaned and processed dataset.
 
-The dataset was imported successfully into Excel and stored in a separate sheet for reference.
+### Tasks Performed
 
-### Sheet:
+- Removed inconsistencies
+- Organized data properly
+- Added conditional formulas
 
-`Raw_Data`
+### Formulas Used
 
----
+```excel
+=IF(J2>500,"High","Low")
+```
 
-## 2. Data Cleaning & Preparation
+Used to classify sales values.
 
-The dataset was cleaned before analysis.
+```excel
+=IF(M2>0,"Profit","Loss")
+```
 
-### Tasks Performed:
-
-- Removed duplicate records
-- Handled missing values
-- Checked and corrected data formats
-- Formatted date columns properly
-
-### Extra Columns Added:
-
-- `Sales Category`
-- `Profit Status`
-
-### Sheet:
-
-`Cleaned_Data`
+Used to identify profit or loss.
 
 ---
 
-## 3. Pivot Tables
+## Pivot_Tables
 
-Pivot tables were created to summarize and analyze the data.
+Contains pivot tables for analyzing:
 
-### Analysis Included:
-
-- Sales by Category and Region
-- Profit by Segment
-
-### Sheet:
-
-`Pivot_Tables`
+- Sales performance
+- Profit analysis
+- Category-wise insights
+- Regional trends
 
 ---
 
-## 4. Advanced Formulas
+## Advanced_Formulas
 
-Different Excel formulas were implemented as required in the task list.
+Contains advanced lookup and analysis formulas.
 
-### Formulas Used:
+### Formula Used
 
-- VLOOKUP
-- INDEX-MATCH
-- IF Condition
-- Nested IF
+```excel
+=INDEX(Cleaned_Data!A:A,MATCH(MAX(Cleaned_Data!J:J),Cleaned_Data!J:J,0))
+```
 
-All formula errors were fixed and verified.
-
-### Sheet:
-
-`Advanced_Formulas`
+Used to find the record with the highest sales value.
 
 ---
 
-## 5. Data Visualization
+## Dashboard
 
-Charts were added to make the analysis easier to understand.
-
-### Charts Included:
-
-- Bar Chart
-- Pie Chart
-- Line Chart
-
-### Additional Formatting:
-
-- Conditional Formatting for sales values
+Contains a visual dashboard created using charts and summarized data for quick business insights.
 
 ---
 
-## 6. Dashboard
+# Tools Used
 
-A dashboard was created to present important insights in a clean and simple way.
-
-### Dashboard Includes:
-
-- KPI cards
-- Sales summary
-- Profit summary
-- Charts and visual analysis
-
-The dashboard was designed to look professional while keeping the layout simple and readable.
-
-### Sheet:
-
-`Dashboard`
-
----
-
-## 7. Documentation
-
-A separate sheet was added to explain the project steps and workbook structure.
-
-### Sheet:
-
-`Documentation`
+- Microsoft Excel
+- Pivot Tables
+- Charts
+- Conditional Formulas
+- INDEX & MATCH Functions
 
 ---
 
 # Conclusion
 
-This project covers all tasks mentioned in the practical exam:
-
-- Data cleaning
-- Pivot table creation
-- Advanced formulas
-- Visualization
-- Dashboard creation
-- Documentation
-
-The workbook was checked for formula errors and organized properly for easy understanding.
+This project helped improve practical Excel skills including data cleaning, analysis, formula implementation, and dashboard creation.
